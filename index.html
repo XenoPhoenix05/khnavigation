@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KH way finder</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <style>
+    body {
+      background-color: #ebdef0;
+      margin: 0;
+      padding: 0;
+    }
+
+    #map-container {
+      position: relative;
+      height: calc(100vh - 80px);
+      width: 100%;
+    }
+
+    #map {
+      height: 100%;
+      width: 100%;
+    }
+
+    #controls {
+      position: absolute;
+      top: 2px;
+      left: 3px;
+      z-index: 1000;
+      background-color: #ffff;
+      padding: 10px;
+    }
+
+    #controls label, #controls select, #controls button {
+      margin-bottom: 5px;
+    }
+
+    #startSelect {
+      width: 300px; /* Adjust the width as needed */
+      font-size: 25px; /* Increase the font size */
+    }
+
+    #endSelect {
+      width: 300px; /* Adjust the width as needed */
+      font-size: 25px;
+    }
+
+    #result {
+      margin-top: 10px;
+    }
+    #navigateButton{
+      font-size: 25px;
+    }
+
+    #clearButton{
+      font-size: 25px;
+    }
+    
+    #nextButton {
+      margin-top: 10px;
+      font-size: 25px;
+    }
+  </style>
+</head>
+<body>
+  <div style="background-color: #ebdef0;">
+    <center><h1>KH WAYFINDER</h1></center>
+  </div>
+
+  <div id="map-container">
+    <div id="map"></div>
+    <div id="controls">
+      
+      <select id="startSelect"></select>
+      <br>
+      <select id="endSelect"></select>
+      <br>
+      <button id="navigateButton">Navigate</button>
+      <button id="clearButton">Clear</button>
+      <br>
+      <div class="nexxt">
+        <button id="nextButton">Continue</button>
+      </div>
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+  <script src="leaflet-ant-path.js"></script>
+  <script src="leaflet-ant-path.es6.js"></script>
+  
+</body>
+</html>
