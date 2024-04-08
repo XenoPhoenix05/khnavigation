@@ -1,0 +1,85 @@
+
+body {
+    background-color: #ebdef0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  /* Map container */
+  #map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  /* Sidebar styles */
+  div.sidebar {
+    width: 15%;
+    height: 550px;
+    float: left;
+    padding: 20px;
+  }
+  
+  div.sidebar label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  div.sidebar select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  div.sidebar button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  div.sidebar button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Next button */
+  div.sidebar button#nextButton {
+    float: right;
+  }
+  
+  /* Result and path sections */
+  div#result {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  div#path {
+    font-weight: bold;
+  }
+  
+  /* Next button container */
+  div.nexxt {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  /* Image overlay and bounds */
+  div#imageCo,
+  div#boundsDiv {
+    font-weight: bold;
+  }
+  
+  /* Clear button */
+  button#clearButton {
+    background-color: #f44336;
+  }
+  
